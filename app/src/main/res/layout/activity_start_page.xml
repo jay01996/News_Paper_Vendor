@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+
+
+    <ImageView
+        android:id="@+id/start_page_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="0dp"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/start_page_back" />
+
+
+    <Button
+        android:id="@+id/btn_Login"
+        android:layout_width="@dimen/one_fifty"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="160dp"
+        android:background="@drawable/start_page_login"
+        android:text="@string/login"
+        android:textColor="#2962ff"
+        android:textSize="18sp" />
+
+
+    <Button
+        android:id="@+id/btn_SignUp"
+        android:layout_width="@dimen/one_fifty"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="81dp"
+        android:background="@drawable/start_page_login"
+        android:text="@string/signup"
+        android:textColor="#2962ff"
+        android:textSize="18sp" />
+</RelativeLayout>

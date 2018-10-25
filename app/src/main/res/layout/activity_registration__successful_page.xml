@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context="com.example.user.newspapervendor.activities.Registration_Successful_page">
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="@dimen/thirty"
+        android:layout_gravity="center"
+        android:src="@drawable/right_tick" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/twenty_five_text"
+        android:textColor="@color/black"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/five"
+        android:text="@string/registration_successful"/>
+
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/fifty"
+        android:textSize="@dimen/twenty_text"
+        android:layout_marginLeft="@dimen/fifty"
+        android:layout_marginRight="@dimen/fifty"
+        android:textColor="@color/white"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/eighteen_text"
+        android:background="@drawable/back_button"
+        android:text="@string/login"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="false"
+        android:layout_marginLeft="@dimen/fifty"
+        android:layout_marginRight="@dimen/fifty"
+        android:background="@drawable/back_edittext"
+        android:layout_marginTop="@dimen/twenty"
+        android:layout_gravity="center"
+        android:textColor="@color/btn_text_color_dark_blue"
+        android:textSize="@dimen/twenty_text"
+        android:text="@string/contact_us"/>
+
+    <ImageView
+        android:layout_width="@dimen/forty"
+        android:layout_height="@dimen/forty"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/twenty"
+        android:src="@drawable/smartphone_call"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/ten"
+        android:textSize="@dimen/eighteen_text"
+        android:textColor="@color/black"
+        android:text="+919876543210"/>
+
+    <ImageView
+        android:layout_width="@dimen/forty"
+        android:layout_height="@dimen/forty"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/twenty"
+        android:src="@drawable/web_address"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/twenty_text"
+        android:textColor="@color/blue"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/ten"
+        android:text="@string/company_website"/>
+    <ImageView
+        android:layout_width="@dimen/forty"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/twenty"
+        android:src="@drawable/company_address"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/fifteen_text"
+        android:textColor="@color/black"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/ten"
+        android:text="@string/company_location"/>
+</LinearLayout>
