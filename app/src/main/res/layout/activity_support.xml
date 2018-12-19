@@ -1,9 +1,64 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".activities.Support">
+    android:background="@color/white"
+    tools:context=".Loan">
 
-</android.support.constraint.ConstraintLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.CardView
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/forty"
+            app:cardBackgroundColor="@color/colorPrimaryDark"
+            app:cardElevation="@dimen/five">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Support"
+                android:textColor="@color/white"
+                android:textSize="@dimen/eighteen_text" />
+
+        </android.support.v7.widget.CardView>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_marginLeft="@dimen/ten"
+            android:layout_marginTop="@dimen/ten"
+            android:text="@string/share_your_feedback_with_us"
+            android:textColor="@color/logo_color"
+            android:textSize="@dimen/twenty_text" />
+
+        <EditText
+            android:id="@+id/edt_feedback"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/hundred_twenty"
+            android:layout_margin="@dimen/fifteen"
+            android:background="@drawable/feedback_text_back"
+            android:hint="Type Your feedback"
+            android:textColor="@color/black"
+            android:gravity="left|top"
+            android:textColorHint="@color/blue" />
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/btn_login"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/fifteen"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="24dp"
+            android:background="#0d47a1"
+            android:text="Submit" />
+    </LinearLayout>
+</ScrollView>

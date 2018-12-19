@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center|top"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/ten"
+        android:gravity="center"
+        android:text="Report Problem"
+        android:textColor="@color/black"
+        android:textSize="@dimen/twenty_text"
+        android:textStyle="normal" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_margin="@dimen/five"
+        android:background="@color/midnight_black" />
+
+    <TextView
+        android:id="@+id/tv_cust_name_report_problem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/ten"
+        android:gravity="left"
+        android:paddingLeft="@dimen/ten"
+        android:text="Customer Name"
+        android:textColor="@color/black"
+        android:textSize="@dimen/eighteen_text"
+        android:textStyle="normal" />
+
+    <TextView
+        android:id="@+id/tv_mobile_report_problem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/five"
+        android:gravity="left"
+        android:paddingLeft="@dimen/ten"
+        android:text="Mobile No."
+        android:textColor="@color/black"
+        android:textSize="@dimen/Sixteen_text"
+        android:textStyle="normal" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/ten"
+        android:gravity="left"
+        android:padding="@dimen/five"
+        android:text="Select From below"
+        android:textColor="@color/black"
+        android:textSize="@dimen/twenty_text"
+        android:textStyle="normal" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_margin="@dimen/five"
+        android:background="@color/midnight_black" />
+
+    <CheckBox
+        android:id="@+id/cb_bill_collection_report_problem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/five"
+        android:text="Bill Calculation is Not Accurate."
+        android:textColor="@color/midnight_black"
+        android:textSize="@dimen/Sixteen_text" />
+
+    <CheckBox
+        android:id="@+id/cb_pending_amount_report_problem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/five"
+        android:text="Pending Amount is Not Accurate."
+        android:textColor="@color/midnight_black"
+        android:textSize="@dimen/Sixteen_text" />
+
+    <CheckBox
+        android:id="@+id/cb_send_bill__report_problem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/five"
+        android:text="Problem in send Bill."
+        android:textColor="@color/midnight_black"
+        android:textSize="@dimen/Sixteen_text" />
+
+    <CheckBox
+        android:id="@+id/cb_collection_report_problem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/five"
+        android:text="Problem in Collection."
+        android:textColor="@color/midnight_black"
+        android:textSize="@dimen/Sixteen_text" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/ten"
+        android:gravity="left"
+        android:padding="@dimen/five"
+        android:text="Other problem or Comment"
+        android:textColor="@color/black"
+        android:textSize="@dimen/twenty_text"
+        android:textStyle="normal" />
+
+    <EditText
+        android:id="@+id/edt_write_report_problem"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/hundred"
+        android:layout_margin="@dimen/ten"
+        android:background="@drawable/feedback_text_back"
+        android:gravity="left|top"
+        android:hint="Write Something..."
+        android:padding="@dimen/ten" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/ten"
+        android:orientation="horizontal"
+        android:padding="@dimen/ten">
+
+
+        <Button
+            android:id="@+id/btn_send_report_problem"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/ten"
+            android:layout_marginRight="@dimen/ten"
+            android:layout_weight=".5"
+            android:background="@drawable/back_button"
+            android:padding="@dimen/ten"
+            android:text="Send"
+            android:textSize="@dimen/Sixteen_text" />
+
+        <Button
+            android:id="@+id/btn_cancel_report_problem"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/ten"
+            android:layout_marginRight="@dimen/ten"
+            android:layout_weight=".5"
+            android:background="@drawable/back_button"
+            android:text="Cancel"
+            android:textSize="@dimen/Sixteen_text" />
+    </LinearLayout>
+</LinearLayout>

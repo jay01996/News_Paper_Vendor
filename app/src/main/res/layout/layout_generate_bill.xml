@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/twenty">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#e213d8">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/five"
+            android:layout_marginTop="3dp"
+            android:gravity="left"
+            android:text="Bill Not Sent."
+            android:textColor="@color/white" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2dp"
+            android:layout_marginTop="@dimen/twenty_five"
+            android:layout_marginRight="2dp"
+            android:layout_marginBottom="2dp"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/five"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/ten"
+                android:paddingRight="@dimen/ten">
+
+                <TextView
+                    android:id="@+id/bill_generate_customer_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight=".9"
+                    android:text="Customer Name "
+                    android:textColor="@color/blue"
+                    android:textSize="@dimen/Sixteen_text" />
+
+                <ImageView
+                    android:id="@+id/bill_generate_iv_option_menu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight=".1"
+                    android:src="@drawable/menu_vertical" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/bill_generate_c_mobile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/ten"
+                android:paddingRight="@dimen/ten"
+                android:text="8630795121"
+                android:textColor="@color/midnight_black"
+                android:textSize="@dimen/forteen_text" />
+
+            <TextView
+                android:id="@+id/bill_generate_papers"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/ten"
+                android:paddingRight="@dimen/ten"
+                android:text="[The Hindu, Dainik Jagran]"
+                android:textColor="@color/midnight_black"
+                android:textSize="@dimen/twelve_text" />
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_margin="@dimen/fifteen"
+                android:background="@color/dim_white" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingBottom="@dimen/five">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".5"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".5"
+                        android:gravity="left"
+                        android:paddingLeft="@dimen/ten"
+                        android:paddingRight="@dimen/ten"
+                        android:text="Estimated Bill:"
+                        android:textColor="@color/midnight_black"
+                        android:textSize="@dimen/forteen_text" />
+
+                    <TextView
+                        android:id="@+id/bill_generate_estimated_bill"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/five"
+                        android:layout_weight=".5"
+                        android:gravity="left"
+                        android:paddingLeft="@dimen/ten"
+                        android:paddingRight="@dimen/ten"
+                        android:text="Rs. 5000.0"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/Sixteen_text" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/ten"
+                    android:layout_marginTop="@dimen/five"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/bill_generate_btn_detail"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/thirty"
+                        android:layout_marginRight="@dimen/ten"
+                        android:background="@drawable/back_button"
+                        android:padding="@dimen/eight"
+                        android:text="Details"
+                        android:textColor="@color/white"
+                        android:textSize="10sp" />
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btn_bill_generate"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/thirty"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/ten"
+                android:layout_marginRight="@dimen/ten"
+                android:layout_weight=".25"
+                android:background="@drawable/feedback_text_back"
+                android:padding="@dimen/eight"
+                android:text="generate Bill"
+                android:textColor="@color/blue"
+                android:textSize="10sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_margin="@dimen/fifteen"
+                android:background="@color/dim_white" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingBottom="@dimen/five">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight=".5"
+                    android:gravity="center"
+                    android:paddingLeft="@dimen/ten"
+                    android:paddingRight="@dimen/ten"
+                    android:text="Enter Bill Colllected"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/fifteen_text" />
+
+                <EditText
+                    android:id="@+id/bill_generate_edt_amount"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/forty"
+                    android:layout_marginLeft="@dimen/thirty"
+                    android:layout_marginRight="@dimen/twenty"
+                    android:layout_weight=".5"
+                    android:background="@drawable/feedback_text_back"
+                    android:gravity="right"
+                    android:hint="Amount"
+                    android:padding="@dimen/eight"
+                    android:textColor="@color/blue"
+                    android:textColorHint="@color/midnight_black" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/bill_generate_btn_send"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/thirty_five"
+                android:layout_gravity="right"
+                android:layout_marginTop="@dimen/five"
+                android:layout_marginRight="@dimen/twenty"
+                android:layout_marginBottom="@dimen/fifteen"
+                android:background="@drawable/back_button"
+                android:text="Send"
+                android:textColor="@color/white"
+                android:textSize="@dimen/twelve_text" />
+        </LinearLayout>
+    </RelativeLayout>
+</android.support.v7.widget.CardView>

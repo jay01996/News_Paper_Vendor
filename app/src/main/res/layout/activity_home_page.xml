@@ -11,35 +11,44 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        tools:context="com.example.user.newspapervendor.activities.HomePage">
+        tools:context=".HomePage">
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="@dimen/thirty_five"
+            android:layout_height="wrap_content"
             android:layout_marginLeft="@dimen/ten"
-            android:layout_marginTop="@dimen/ten"
+            android:layout_marginTop="@dimen/five"
             android:layout_marginRight="@dimen/ten"
             android:gravity="center"
             android:orientation="horizontal">
 
             <TextView
+                android:id="@+id/tv_current_date"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/five"
+                android:layout_marginLeft="@dimen/five"
                 android:layout_weight=".1"
-                android:text="@string/october_2018"
+                android:text="Dec \n2018"
                 android:textColor="@color/black" />
 
-            <ImageView
+            <TextView
                 android:layout_width="wrap_content"
-                android:layout_height="@dimen/thirty_five"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/thirty"
                 android:layout_weight=".6"
-                android:src="@drawable/cliffminds" />
+                android:fontFamily="cursive"
+                android:gravity="left"
+                android:text="PaperDele"
+                android:textColor="#00bfff"
+                android:textSize="@dimen/thirty_text"
+                android:textStyle="bold" />
 
             <ImageView
                 android:id="@+id/iv_notification"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_weight=".2"
+                android:layout_width="@dimen/twenty_five"
+                android:layout_height="@dimen/twenty_five"
+                android:layout_weight=".1"
                 android:src="@drawable/notification" />
         </LinearLayout>
 
@@ -57,7 +66,7 @@
                 android:layout_marginEnd="5dp"
                 android:layout_marginRight="5dp"
                 android:layout_weight=".5"
-                app:cardBackgroundColor="@color/home_page_red"
+                app:cardBackgroundColor="@color/logo_color"
                 app:cardCornerRadius="@dimen/five"
                 app:cardElevation="@dimen/five"
                 app:contentPadding="10dp">
@@ -67,12 +76,6 @@
                     android:layout_height="wrap_content"
                     android:gravity="center"
                     android:orientation="horizontal">
-
-                    <ImageView
-                        android:layout_width="48dp"
-                        android:layout_height="wrap_content"
-                        android:contentDescription="@string/cash_collection"
-                        android:src="@drawable/money" />
 
                     <LinearLayout
                         android:layout_width="wrap_content"
@@ -88,6 +91,7 @@
                             android:textColor="@color/white" />
 
                         <TextView
+                            android:id="@+id/tv_cash_collected"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="@string/cash_collection_amount"
@@ -103,7 +107,7 @@
                 android:layout_marginStart="5dp"
                 android:layout_marginLeft="5dp"
                 android:layout_weight=".5"
-                app:cardBackgroundColor="@color/home_page_red"
+                app:cardBackgroundColor="@color/logo_color"
                 app:cardCornerRadius="@dimen/five"
                 app:cardElevation="@dimen/five"
                 app:contentPadding="10dp">
@@ -113,12 +117,6 @@
                     android:layout_height="wrap_content"
                     android:gravity="center"
                     android:orientation="horizontal">
-
-                    <ImageView
-                        android:layout_width="48dp"
-                        android:layout_height="wrap_content"
-                        android:contentDescription="@string/pending"
-                        android:src="@drawable/pending" />
 
                     <LinearLayout
                         android:layout_width="wrap_content"
@@ -135,6 +133,7 @@
                             android:textColor="@color/white" />
 
                         <TextView
+                            android:id="@+id/tv_pending_amount"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="@string/pending_amount"
@@ -160,7 +159,7 @@
                 android:layout_marginEnd="@dimen/five"
                 android:layout_marginRight="@dimen/five"
                 android:layout_weight=".5"
-                app:cardBackgroundColor="@color/home_page_red"
+                app:cardBackgroundColor="@color/logo_color"
                 app:cardCornerRadius="@dimen/five"
                 app:cardElevation="@dimen/five"
                 app:contentPadding="10dp">
@@ -172,11 +171,6 @@
                     android:gravity="center"
                     android:orientation="horizontal">
 
-                    <ImageView
-                        android:layout_width="48dp"
-                        android:layout_height="48dp"
-                        android:contentDescription="@string/online_collection"
-                        android:src="@drawable/online_payment" />
 
                     <LinearLayout
                         android:layout_width="wrap_content"
@@ -192,6 +186,7 @@
                             android:textColor="@color/white" />
 
                         <TextView
+                            android:id="@+id/tv_online_payment"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="@string/online_collection_amount"
@@ -207,7 +202,7 @@
                 android:layout_marginStart="@dimen/five"
                 android:layout_marginLeft="@dimen/five"
                 android:layout_weight=".5"
-                app:cardBackgroundColor="@color/home_page_red"
+                app:cardBackgroundColor="@color/logo_color"
                 app:cardCornerRadius="@dimen/five"
                 app:cardElevation="@dimen/five"
                 app:contentPadding="10dp">
@@ -218,19 +213,10 @@
                     android:gravity="center"
                     android:orientation="horizontal">
 
-                    <ImageView
-                        android:layout_width="48dp"
-                        android:layout_height="48dp"
-                        android:layout_marginEnd="@dimen/ten"
-                        android:layout_marginRight="@dimen/ten"
-                        android:contentDescription="@string/bank_transfer_name"
-                        android:src="@drawable/bank_transfer" />
 
                     <LinearLayout
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginStart="5dp"
-                        android:layout_marginLeft="5dp"
                         android:orientation="vertical">
 
                         <TextView
@@ -240,6 +226,7 @@
                             android:textColor="@color/white" />
 
                         <TextView
+                            android:id="@+id/tv_bank_transfer_amt"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="@string/bank_transfer_amount"
@@ -253,34 +240,31 @@
         <android.support.v7.widget.CardView
             android:id="@+id/cv_customers"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:layout_marginStart="@dimen/ten"
             android:layout_marginLeft="@dimen/ten"
             android:layout_marginTop="@dimen/ten"
             android:layout_marginEnd="@dimen/ten"
             android:layout_marginRight="@dimen/ten"
-            app:cardBackgroundColor="@color/home_page_menu_color"
-            app:cardCornerRadius="@dimen/five"
-
-            app:cardElevation="@dimen/five"
+            app:cardBackgroundColor="@color/white"
             app:contentPadding="10dp">
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="match_parent"
                 android:gravity="center"
                 android:orientation="horizontal">
 
                 <ImageView
-                    android:layout_width="48dp"
-                    android:layout_height="48dp"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
                     android:layout_weight=".2"
                     android:contentDescription="@string/bank_transfer_name"
-                    android:src="@drawable/cutomer" />
+                    android:src="@drawable/ic_peoples" />
 
                 <LinearLayout
                     android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
+                    android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:layout_marginStart="5dp"
                     android:layout_marginLeft="5dp"
@@ -298,7 +282,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/add_manage_customers"
-                        android:textColor="@color/home_page_red"
+                        android:textColor="@color/logo_color"
                         android:textSize="@dimen/Sixteen_text" />
                 </LinearLayout>
 
@@ -306,7 +290,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight=".1"
-                    android:src="@drawable/right_arrow" />
+                    android:src="@drawable/ic_sharp_keyboard_arrow_right_24px" />
             </LinearLayout>
         </android.support.v7.widget.CardView>
 
@@ -319,10 +303,7 @@
             android:layout_marginTop="@dimen/ten"
             android:layout_marginEnd="@dimen/ten"
             android:layout_marginRight="@dimen/ten"
-            app:cardBackgroundColor="@color/home_page_menu_color"
-            app:cardCornerRadius="@dimen/five"
-
-            app:cardElevation="@dimen/five"
+            app:cardBackgroundColor="@color/white"
             app:contentPadding="10dp">
 
             <LinearLayout
@@ -332,10 +313,10 @@
                 android:orientation="horizontal">
 
                 <ImageView
-                    android:layout_width="48dp"
-                    android:layout_height="48dp"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
                     android:layout_weight=".2"
-                    android:src="@drawable/bill_collection" />
+                    android:src="@drawable/ic_sharp_receipt_24px" />
 
                 <LinearLayout
                     android:layout_width="wrap_content"
@@ -357,7 +338,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Genrate Bill and Collect"
-                        android:textColor="@color/home_page_red"
+                        android:textColor="@color/logo_color"
                         android:textSize="@dimen/Sixteen_text" />
                 </LinearLayout>
 
@@ -365,7 +346,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight=".1"
-                    android:src="@drawable/right_arrow" />
+                    android:src="@drawable/ic_sharp_keyboard_arrow_right_24px" />
             </LinearLayout>
         </android.support.v7.widget.CardView>
 
@@ -378,10 +359,7 @@
             android:layout_marginTop="@dimen/ten"
             android:layout_marginEnd="@dimen/ten"
             android:layout_marginRight="@dimen/ten"
-            app:cardBackgroundColor="@color/home_page_menu_color"
-            app:cardCornerRadius="@dimen/five"
-
-            app:cardElevation="@dimen/five"
+            app:cardBackgroundColor="@color/white"
             app:contentPadding="10dp">
 
             <LinearLayout
@@ -391,10 +369,10 @@
                 android:orientation="horizontal">
 
                 <ImageView
-                    android:layout_width="48dp"
-                    android:layout_height="48dp"
+                    android:layout_width="35dp"
+                    android:layout_height="40dp"
                     android:layout_weight=".2"
-                    android:src="@drawable/bank_transfer2" />
+                    android:src="@drawable/ic_sharp_send_24px" />
 
                 <LinearLayout
                     android:layout_width="wrap_content"
@@ -416,7 +394,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/online_transfer_states"
-                        android:textColor="@color/home_page_red"
+                        android:textColor="@color/logo_color"
                         android:textSize="@dimen/Sixteen_text" />
                 </LinearLayout>
 
@@ -424,7 +402,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight=".1"
-                    android:src="@drawable/right_arrow" />
+                    android:src="@drawable/ic_sharp_keyboard_arrow_right_24px" />
             </LinearLayout>
         </android.support.v7.widget.CardView>
 
@@ -437,10 +415,7 @@
             android:layout_marginTop="@dimen/ten"
             android:layout_marginEnd="@dimen/ten"
             android:layout_marginRight="@dimen/ten"
-            app:cardBackgroundColor="@color/home_page_menu_color"
-            app:cardCornerRadius="@dimen/five"
-
-            app:cardElevation="@dimen/five"
+            app:cardBackgroundColor="@color/white"
             app:contentPadding="10dp">
 
             <LinearLayout
@@ -450,11 +425,11 @@
                 android:orientation="horizontal">
 
                 <ImageView
-                    android:layout_width="48dp"
-                    android:layout_height="48dp"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
                     android:layout_weight=".2"
                     android:contentDescription="@string/stop_delivery"
-                    android:src="@drawable/stop_delivery" />
+                    android:src="@drawable/ic_sharp_stop_24px" />
 
                 <LinearLayout
                     android:layout_width="wrap_content"
@@ -476,7 +451,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/stop_paper_delivery"
-                        android:textColor="@color/home_page_red"
+                        android:textColor="@color/logo_color"
                         android:textSize="@dimen/Sixteen_text" />
                 </LinearLayout>
 
@@ -484,7 +459,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight=".1"
-                    android:src="@drawable/right_arrow" />
+                    android:src="@drawable/ic_sharp_keyboard_arrow_right_24px" />
             </LinearLayout>
         </android.support.v7.widget.CardView>
 
@@ -497,10 +472,7 @@
             android:layout_marginTop="@dimen/ten"
             android:layout_marginEnd="@dimen/ten"
             android:layout_marginRight="@dimen/ten"
-            app:cardBackgroundColor="@color/home_page_menu_color"
-            app:cardCornerRadius="@dimen/five"
-
-            app:cardElevation="@dimen/five"
+            app:cardBackgroundColor="@color/white"
             app:contentPadding="10dp">
 
             <LinearLayout
@@ -510,11 +482,11 @@
                 android:orientation="horizontal">
 
                 <ImageView
-                    android:layout_width="48dp"
-                    android:layout_height="48dp"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
                     android:layout_weight=".2"
                     android:contentDescription="@string/coupon_expiry"
-                    android:src="@drawable/coupon_expiry" />
+                    android:src="@drawable/ic_sharp_update_24px" />
 
                 <LinearLayout
                     android:layout_width="wrap_content"
@@ -536,7 +508,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/view_edit_coupon_plans"
-                        android:textColor="@color/home_page_red"
+                        android:textColor="@color/logo_color"
                         android:textSize="@dimen/Sixteen_text" />
                 </LinearLayout>
 
@@ -544,7 +516,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight=".1"
-                    android:src="@drawable/right_arrow" />
+                    android:src="@drawable/ic_sharp_keyboard_arrow_right_24px" />
             </LinearLayout>
         </android.support.v7.widget.CardView>
 
@@ -557,10 +529,7 @@
             android:layout_marginTop="@dimen/ten"
             android:layout_marginEnd="@dimen/ten"
             android:layout_marginRight="@dimen/ten"
-            app:cardBackgroundColor="@color/home_page_menu_color"
-            app:cardCornerRadius="@dimen/five"
-
-            app:cardElevation="@dimen/five"
+            app:cardBackgroundColor="@color/white"
             app:contentPadding="10dp">
 
             <LinearLayout
@@ -570,11 +539,11 @@
                 android:orientation="horizontal">
 
                 <ImageView
-                    android:layout_width="48dp"
-                    android:layout_height="48dp"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
                     android:layout_weight=".2"
                     android:contentDescription="@string/monthly_statement"
-                    android:src="@drawable/monthly_statement" />
+                    android:src="@drawable/ic_sharp_description_24px" />
 
                 <LinearLayout
                     android:layout_width="wrap_content"
@@ -596,7 +565,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/view_print_monthly_statement"
-                        android:textColor="@color/home_page_red"
+                        android:textColor="@color/logo_color"
                         android:textSize="@dimen/Sixteen_text" />
                 </LinearLayout>
 
@@ -604,129 +573,10 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight=".1"
-                    android:src="@drawable/right_arrow" />
+                    android:src="@drawable/ic_sharp_keyboard_arrow_right_24px" />
             </LinearLayout>
         </android.support.v7.widget.CardView>
 
-        <android.support.v7.widget.CardView
-            android:id="@+id/cv_settings"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="@dimen/ten"
-            android:layout_marginLeft="@dimen/ten"
-            android:layout_marginTop="@dimen/ten"
-            android:layout_marginEnd="@dimen/ten"
-            android:layout_marginRight="@dimen/ten"
-            app:cardBackgroundColor="@color/home_page_menu_color"
-            app:cardCornerRadius="@dimen/five"
-
-            app:cardElevation="@dimen/five"
-            app:contentPadding="10dp">
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:gravity="center"
-                android:orientation="horizontal">
-
-                <ImageView
-                    android:layout_width="48dp"
-                    android:layout_height="48dp"
-                    android:layout_weight=".2"
-                    android:contentDescription="@string/settings"
-                    android:src="@drawable/settings" />
-
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:layout_marginStart="5dp"
-                    android:layout_marginLeft="5dp"
-                    android:layout_weight=".6"
-                    android:orientation="vertical">
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="@string/settings"
-                        android:textColor="@color/black"
-                        android:textSize="@dimen/eighteen_text" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Language, Bank, Price etc"
-                        android:textColor="@color/home_page_red"
-                        android:textSize="@dimen/Sixteen_text" />
-                </LinearLayout>
-
-                <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight=".1"
-                    android:src="@drawable/right_arrow" />
-            </LinearLayout>
-        </android.support.v7.widget.CardView>
-
-        <android.support.v7.widget.CardView
-            android:id="@+id/cv_training"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="@dimen/ten"
-            android:layout_marginLeft="@dimen/ten"
-            android:layout_marginTop="@dimen/ten"
-            android:layout_marginEnd="@dimen/ten"
-            android:layout_marginRight="@dimen/ten"
-            app:cardBackgroundColor="@color/home_page_menu_color"
-            app:cardCornerRadius="@dimen/five"
-
-            app:cardElevation="@dimen/five"
-            app:contentPadding="10dp">
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:gravity="center"
-                android:orientation="horizontal">
-
-                <ImageView
-                    android:layout_width="48dp"
-                    android:layout_height="48dp"
-                    android:layout_weight=".2"
-                    android:contentDescription="@string/training"
-                    android:src="@drawable/training" />
-
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:layout_marginStart="5dp"
-                    android:layout_marginLeft="5dp"
-                    android:layout_weight=".6"
-                    android:orientation="vertical">
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="@string/training"
-                        android:textColor="@color/black"
-                        android:textSize="@dimen/eighteen_text" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="@string/learn_how_to_use_app"
-                        android:textColor="@color/home_page_red"
-                        android:textSize="@dimen/eighteen_text" />
-                </LinearLayout>
-
-                <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight=".1"
-                    android:src="@drawable/right_arrow" />
-            </LinearLayout>
-        </android.support.v7.widget.CardView>
 
         <android.support.v7.widget.CardView
             android:id="@+id/cv_testimonial"
@@ -737,9 +587,7 @@
             android:layout_marginTop="@dimen/ten"
             android:layout_marginEnd="@dimen/ten"
             android:layout_marginRight="@dimen/ten"
-            app:cardBackgroundColor="@color/home_page_menu_color"
-            app:cardCornerRadius="@dimen/five"
-            app:cardElevation="@dimen/five"
+            app:cardBackgroundColor="@color/white"
             app:contentPadding="10dp">
 
             <LinearLayout
@@ -749,11 +597,11 @@
                 android:orientation="horizontal">
 
                 <ImageView
-                    android:layout_width="48dp"
-                    android:layout_height="48dp"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
                     android:layout_weight=".2"
                     android:contentDescription="@string/testimonials"
-                    android:src="@drawable/testimonial" />
+                    android:src="@drawable/ic_sharp_speaker_notes_24px" />
 
                 <LinearLayout
                     android:layout_width="wrap_content"
@@ -775,7 +623,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Read What Other Vendors Saying"
-                        android:textColor="@color/home_page_red"
+                        android:textColor="@color/logo_color"
                         android:textSize="@dimen/Sixteen_text" />
                 </LinearLayout>
 
@@ -783,7 +631,121 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight=".1"
-                    android:src="@drawable/right_arrow" />
+                    android:src="@drawable/ic_sharp_keyboard_arrow_right_24px" />
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/cv_loan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/ten"
+            android:layout_marginLeft="@dimen/ten"
+            android:layout_marginTop="@dimen/ten"
+            android:layout_marginEnd="@dimen/ten"
+            android:layout_marginRight="@dimen/ten"
+            app:cardBackgroundColor="@color/white"
+            app:contentPadding="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_weight=".2"
+                    android:contentDescription="@string/loan"
+                    android:src="@drawable/ic_sharp_credit_card_24px" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight=".6"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/loan"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/eighteen_text" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/loan_information"
+                        android:textColor="@color/logo_color"
+                        android:textSize="@dimen/Sixteen_text" />
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".1"
+                    android:src="@drawable/ic_sharp_keyboard_arrow_right_24px" />
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/cv_settings"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/ten"
+            android:layout_marginLeft="@dimen/ten"
+            android:layout_marginTop="@dimen/ten"
+            android:layout_marginEnd="@dimen/ten"
+            android:layout_marginRight="@dimen/ten"
+            app:cardBackgroundColor="@color/white"
+            app:contentPadding="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_weight=".2"
+                    android:contentDescription="@string/settings"
+                    android:src="@drawable/ic_sharp_settings_24px" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight=".6"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/settings"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/eighteen_text" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Language, Bank, Price etc"
+                        android:textColor="@color/logo_color"
+                        android:textSize="@dimen/Sixteen_text" />
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".1"
+                    android:src="@drawable/ic_sharp_keyboard_arrow_right_24px" />
             </LinearLayout>
         </android.support.v7.widget.CardView>
 
@@ -796,9 +758,7 @@
             android:layout_marginEnd="@dimen/ten"
             android:layout_marginRight="@dimen/ten"
             android:layout_marginBottom="@dimen/five"
-            app:cardBackgroundColor="@color/home_page_red"
-            app:cardCornerRadius="0dp"
-            app:cardElevation="@dimen/five"
+            app:cardBackgroundColor="@color/logo_color"
             app:contentPadding="10dp">
 
             <LinearLayout

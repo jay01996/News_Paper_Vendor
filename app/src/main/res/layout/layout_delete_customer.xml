@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center|top"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/ten"
+        android:gravity="center"
+        android:text="Attention"
+        android:textColor="@color/home_page_red"
+        android:textSize="@dimen/twenty_five_text"
+        android:textStyle="normal" />
+<View
+    android:layout_width="match_parent"
+    android:layout_height="1dp"
+    android:layout_margin="@dimen/five"
+    android:background="@color/midnight_black"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/ten"
+        android:gravity="center"
+        android:padding="@dimen/fifteen"
+        android:text="@string/delete_customer_msg"
+        android:textColor="@color/black"
+        android:textSize="@dimen/eighteen_text"
+        android:textStyle="normal" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/ten"
+        android:gravity="center"
+        android:text="Do You Still Want To Delete?"
+        android:padding="@dimen/fifteen"
+        android:textColor="@color/home_page_red"
+        android:textSize="@dimen/twenty_text"
+        android:textStyle="normal" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/ten"
+        android:orientation="horizontal"
+        android:padding="@dimen/ten">
+
+        <Button
+            android:id="@+id/btn_delete_customer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/ten"
+            android:layout_marginRight="@dimen/ten"
+            android:layout_weight=".5"
+            android:background="@drawable/back_button"
+            android:padding="@dimen/ten"
+            android:text="Delete"
+            android:textSize="@dimen/Sixteen_text" />
+
+        <Button
+            android:id="@+id/btn_cancel_delete_customer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/ten"
+            android:layout_marginRight="@dimen/ten"
+            android:layout_weight=".5"
+            android:background="@drawable/back_button"
+            android:text="Cancel"
+            android:textSize="@dimen/Sixteen_text" />
+    </LinearLayout>
+</LinearLayout>

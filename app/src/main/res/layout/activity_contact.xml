@@ -1,9 +1,314 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".activities.Contact">
+    tools:context=".Contact">
 
-</android.support.constraint.ConstraintLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.CardView
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/forty"
+            app:cardBackgroundColor="@color/colorPrimaryDark"
+            app:cardElevation="@dimen/five">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Contact Us"
+                android:textColor="@color/white"
+                android:textSize="@dimen/eighteen_text" />
+
+        </android.support.v7.widget.CardView>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_margin="@dimen/fifteen"
+            android:padding="@dimen/five"
+            android:text="@string/contact_info"
+            android:textColor="@color/black"
+            android:textSize="@dimen/eighteen_text" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/ten"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="@dimen/forty"
+                    android:layout_height="@dimen/forty"
+                    android:layout_gravity="center"
+                    android:src="@drawable/call" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="@dimen/ten"
+                    android:text="Phone:\n+91 7906637706"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/Sixteen_text" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/ten"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="@dimen/thirty_five"
+                    android:layout_height="@dimen/thirty_five"
+                    android:layout_gravity="center"
+                    android:src="@drawable/web" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="@dimen/ten"
+                    android:text="Web:\nwww.cliffminds.com"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/Sixteen_text" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/ten"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="@dimen/forty"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@drawable/email" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="@dimen/ten"
+                    android:text="Email:\nsupport@cliffminds.com"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/Sixteen_text" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_margin="@dimen/fifteen"
+            android:padding="@dimen/ten"
+            android:text="@string/contact_info2"
+            android:textColor="@color/black"
+            android:textSize="@dimen/Sixteen_text"
+            android:textStyle="normal" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/fifteen"
+            android:layout_marginTop="@dimen/fifteen"
+            android:layout_marginRight="@dimen/fifteen"
+            android:background="@drawable/feedback_text_back"
+            android:orientation="horizontal"
+            android:padding="@dimen/five">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight=".7"
+                android:gravity="center"
+                android:text="Name :"
+                android:textColor="@color/black"
+                android:textSize="@dimen/Sixteen_text" />
+
+            <EditText
+                android:id="@+id/edt_contact_user_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight=".3"
+                android:background="@drawable/preview_customer_details"
+                android:gravity="right"
+                android:inputType="text"
+                android:padding="@dimen/five"
+                android:textColor="@color/black"
+                android:textSize="@dimen/Sixteen_text"
+                android:textStyle="normal" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/fifteen"
+            android:layout_marginTop="@dimen/fifteen"
+            android:layout_marginRight="@dimen/fifteen"
+            android:background="@drawable/feedback_text_back"
+            android:orientation="horizontal"
+            android:padding="@dimen/five">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight=".7"
+                android:gravity="center"
+                android:text="Email :"
+                android:textColor="@color/black"
+                android:textSize="@dimen/Sixteen_text" />
+
+            <EditText
+                android:id="@+id/edt_contact_user_mail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight=".3"
+                android:background="@drawable/preview_customer_details"
+                android:gravity="right"
+                android:inputType="text"
+                android:padding="@dimen/five"
+                android:textColor="@color/black"
+                android:textSize="@dimen/Sixteen_text"
+                android:textStyle="normal" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/fifteen"
+            android:layout_marginTop="@dimen/fifteen"
+            android:layout_marginRight="@dimen/fifteen"
+            android:background="@drawable/feedback_text_back"
+            android:orientation="horizontal"
+            android:padding="@dimen/five">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight=".7"
+                android:gravity="center"
+                android:text="Mobile :"
+                android:textColor="@color/black"
+                android:textSize="@dimen/Sixteen_text" />
+
+            <EditText
+                android:id="@+id/edt_contact_mobile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight=".3"
+                android:background="@drawable/preview_customer_details"
+                android:gravity="right"
+                android:inputType="phone"
+                android:padding="@dimen/five"
+                android:textColor="@color/black"
+                android:textSize="@dimen/Sixteen_text"
+                android:textStyle="normal" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/fifteen"
+            android:layout_marginTop="@dimen/fifteen"
+            android:layout_marginRight="@dimen/fifteen"
+            android:background="@drawable/feedback_text_back"
+            android:orientation="horizontal"
+            android:padding="@dimen/five">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight=".7"
+                android:gravity="center"
+                android:text="City :"
+                android:textColor="@color/black"
+                android:textSize="@dimen/Sixteen_text" />
+
+            <EditText
+                android:id="@+id/edt_contact_city"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight=".3"
+                android:background="@drawable/preview_customer_details"
+                android:gravity="right"
+                android:inputType="text"
+                android:padding="@dimen/five"
+                android:textColor="@color/black"
+                android:textSize="@dimen/Sixteen_text"
+                android:textStyle="normal" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/fifteen"
+            android:layout_marginTop="@dimen/fifteen"
+            android:layout_marginRight="@dimen/fifteen"
+            android:background="@drawable/feedback_text_back"
+            android:orientation="horizontal"
+            android:padding="@dimen/five">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight=".7"
+                android:gravity="center"
+                android:text="Message :"
+                android:textColor="@color/black"
+                android:textSize="@dimen/Sixteen_text" />
+
+            <EditText
+                android:id="@+id/edt_contact_message"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/seventy"
+                android:layout_gravity="center"
+                android:layout_weight=".3"
+                android:background="@drawable/preview_customer_details"
+                android:gravity="right"
+                android:inputType="text"
+                android:padding="@dimen/five"
+                android:textColor="@color/black"
+                android:textSize="@dimen/Sixteen_text"
+                android:textStyle="normal" />
+        </LinearLayout>
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/btn_submit"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/fifteen"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="24dp"
+            android:background="#0d47a1"
+            android:text="Submit" />
+    </LinearLayout>
+</ScrollView>

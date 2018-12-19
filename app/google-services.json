@@ -1,0 +1,99 @@
+{
+  "project_info": {
+    "project_number": "508705352790",
+    "firebase_url": "https://newspapervendor-f6ea3.firebaseio.com",
+    "project_id": "newspapervendor-f6ea3",
+    "storage_bucket": "newspapervendor-f6ea3.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:508705352790:android:b50f2dc529ee482c",
+        "android_client_info": {
+          "package_name": "com.example.user.newspapervendor"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "508705352790-ip4vsa78b1b89qo83r4o9s8ipcmck8r8.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.user.newspapervendor",
+            "certificate_hash": "913c5d7b25309c87918be64a9d089fd456f92531"
+          }
+        },
+        {
+          "client_id": "508705352790-4fglm228v5fo06q8krjn3f8hcca24inr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDsUhU8aD05Fvz6wx1f9lSuEV4iwjIDYpU"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "508705352790-4fglm228v5fo06q8krjn3f8hcca24inr.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:508705352790:android:f10ae06fb5015050",
+        "android_client_info": {
+          "package_name": "com.example.user.newspapervendor.activities"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "508705352790-mdfgi1b219u5mnk1p6m031v7ah4rohqf.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.user.newspapervendor.activities",
+            "certificate_hash": "913c5d7b25309c87918be64a9d089fd456f92531"
+          }
+        },
+        {
+          "client_id": "508705352790-4fglm228v5fo06q8krjn3f8hcca24inr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDsUhU8aD05Fvz6wx1f9lSuEV4iwjIDYpU"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "508705352790-4fglm228v5fo06q8krjn3f8hcca24inr.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

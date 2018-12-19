@@ -28,6 +28,9 @@
     <dimen name="hundred_twenty">120dp</dimen>
     <dimen name="one_fifty">150dp</dimen>
     <dimen name="five">5dp</dimen>
+    <dimen name="twelve_text">12sp</dimen>
+    <dimen name="forteen_text">14sp</dimen>
+    <dimen name="eight">8dp</dimen>
 
 
 </resources>

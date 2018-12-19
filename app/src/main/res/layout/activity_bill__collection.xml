@@ -1,9 +1,43 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".activities.Bill_Collection">
+    android:background="@color/dim_white"
+    android:orientation="vertical"
+    tools:context=".Bill_Collection">
 
-</android.support.constraint.ConstraintLayout>
+    <android.support.v7.widget.CardView
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/forty"
+        app:cardBackgroundColor="@color/colorPrimaryDark"
+        app:cardElevation="@dimen/five">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/bill_collection"
+            android:textColor="@color/white"
+            android:textSize="@dimen/eighteen_text" />
+
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recylerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/ten"
+        android:layout_marginBottom="@dimen/thirty"
+        android:text="No More Data to show"
+        android:textColor="@color/logo_color"
+        android:textSize="@dimen/twenty_text" />
+</LinearLayout>

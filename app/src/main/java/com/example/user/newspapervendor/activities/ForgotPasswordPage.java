@@ -1,73 +1,94 @@
 package com.example.user.newspapervendor.activities;
 
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.text.TextUtils;
+import android.support.annotation.NonNull;
+import android.support.design.widget.Snackbar;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
-import android.widget.Button;
+import android.view.inputmethod.InputMethodManager;
 import android.widget.EditText;
-import android.widget.Toast;
+import android.widget.LinearLayout;
+import android.widget.ProgressBar;
+import android.widget.TextView;
 
-import com.example.user.newspapervendor.R;
+import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.Task;
+import com.google.firebase.auth.FirebaseAuth;
 
-public class ForgotPasswordPage extends AppCompatActivity {
-private EditText edt_mobile_number,edt_otp,edt_new_password;
-private Button btn_get_otp,btn_verify,btn_save_password;
-private String mobile,new_password,verification_code;
+public class ForgotPasswordPage extends AppCompatActivity implements View.OnClickListener {
+    private EditText edt_reset_email;
+    //  private Button btn_reset_password;
+    private String email;
+    private FirebaseAuth mAuth;
+    private LinearLayout linearlayout_reset_pass;
+    private TextView progress_bar_reset_text;
+    private ProgressBar progress_bar_reset;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_forgot_password_page);
 
-        edt_mobile_number=findViewById(R.id.edt_mobile_number);
-        edt_new_password=findViewById(R.id.edt_new_password);
-        edt_otp=findViewById(R.id.edt_otp);
-        btn_get_otp=findViewById(R.id.btn_get_otp);
-        btn_save_password=findViewById(R.id.btn_save_password);
-        btn_verify=findViewById(R.id.btn_verify);
+        findViewById(R.id.btn_reset_password).setOnClickListener(this);
+        edt_reset_email = findViewById(R.id.edt_reset_email);
+        mAuth = FirebaseAuth.getInstance();
+        linearlayout_reset_pass = findViewById(R.id.linearlayout_reset_pass);
+        progress_bar_reset_text = findViewById(R.id.progress_bar_reset_text);
+        progress_bar_reset = findViewById(R.id.progress_bar_reset);
+    }
 
-        btn_get_otp.setOnClickListener(new View.OnClickListener() {
+    @Override
+    public void onClick(View v) {
+        switch (v.getId()) {
+            case R.id.btn_reset_password:
+                resetPassword();
+                break;
+        }
+    }
+
+    private void resetPassword() {
+        InputMethodManager imm = (InputMethodManager) getSystemService(INPUT_METHOD_SERVICE);
+        imm.hideSoftInputFromWindow(getCurrentFocus().getWindowToken(), 0);
+        email = edt_reset_email.getText().toString();
+        if (email.isEmpty()) {
+            edt_reset_email.setError("Fill Email");
+            edt_reset_email.requestFocus();
+            return;
+        }
+        progress_bar_reset.setVisibility(View.VISIBLE);
+        progress_bar_reset_text.setVisibility(View.VISIBLE);
+        linearlayout_reset_pass.setAlpha((float) 0.2);
+        mAuth.sendPasswordResetEmail(email).addOnCompleteListener(new OnCompleteListener<Void>() {
             @Override
-            public void onClick(View v) {
-                mobile=edt_mobile_number.getText().toString().trim();
-                if (TextUtils.isEmpty(mobile))
-                {
-                    edt_mobile_number.setError("Enter Mobile");
-                    return;
+            public void onComplete(@NonNull Task<Void> task) {
+                if (task.isSuccessful()) {
+                    progress_bar_reset.setVisibility(View.GONE);
+                    progress_bar_reset_text.setVisibility(View.GONE);
+                    linearlayout_reset_pass.setAlpha(1);
+                    edt_reset_email.setText("");
+                    final Snackbar snackbar = Snackbar.make(linearlayout_reset_pass, "A Link for reset Password has been sent to your registered email", Snackbar.LENGTH_INDEFINITE);
+                    snackbar.setAction("Login", new View.OnClickListener() {
+                        @Override
+                        public void onClick(View v) {
+                            startActivity(new Intent(ForgotPasswordPage.this, LoginScreen.class));
+                            finish();
+                            snackbar.dismiss();
+
+                        }
+                    });
+                    snackbar.show();
+                } else {
+                    progress_bar_reset.setVisibility(View.GONE);
+                    progress_bar_reset_text.setVisibility(View.GONE);
+                    linearlayout_reset_pass.setAlpha(1);
+                    edt_reset_email.setText("");
+                    Snackbar snackbar = Snackbar.make(linearlayout_reset_pass, task.getException().getMessage(), Snackbar.LENGTH_SHORT);
+                    snackbar.show();
                 }
-                Toast.makeText(ForgotPasswordPage.this, "Enter Mobile"+mobile, Toast.LENGTH_SHORT).show();
             }
         });
 
-        btn_verify.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                verification_code=edt_otp.getText().toString().trim();
-                if (TextUtils.isEmpty(verification_code))
-                {
-                    edt_otp.setError("Enter OTP");
-                    return;
-                }
-                Toast.makeText(ForgotPasswordPage.this, "Enter OTP "+verification_code, Toast.LENGTH_SHORT).show();
-            }
-        });
 
-
-        btn_save_password.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                new_password=edt_new_password.getText().toString().trim();
-                if (TextUtils.isEmpty(mobile))
-                {
-                    edt_new_password.setError("Enter New Password");
-                    return;
-                }
-                Toast.makeText(ForgotPasswordPage.this, "Enter Mobile"+new_password, Toast.LENGTH_SHORT).show();
-                Intent intent=new Intent(ForgotPasswordPage.this,LoginScreen.class);
-                startActivity(intent);
-                finish();
-            }
-        });
     }
 }

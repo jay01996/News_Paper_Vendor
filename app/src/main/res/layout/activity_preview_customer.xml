@@ -1,0 +1,580 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    tools:context=".PreviewCustomer">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/linearlayout_preview_details"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginLeft="@dimen/fifteen"
+                android:layout_marginTop="@dimen/fifteen"
+                android:layout_marginRight="@dimen/fifteen"
+                android:gravity="left"
+                android:orientation="horizontal"
+                android:padding="@dimen/ten"
+                android:weightSum="1">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".55"
+                    android:gravity="left"
+                    android:text="Name"
+                    android:textSize="@dimen/fifteen_text" />
+
+                <EditText
+                    android:id="@+id/pre_customer_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".45"
+                    android:background="@drawable/preview_customer_details"
+                    android:hint="Customer name"
+                    android:inputType="text"
+                    android:paddingLeft="@dimen/ten"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/Sixteen_text" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="@dimen/fifteen"
+                android:layout_marginTop="@dimen/fifteen"
+                android:layout_marginRight="@dimen/fifteen"
+                android:background="#d6d4d4" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginLeft="@dimen/fifteen"
+                android:layout_marginTop="@dimen/fifteen"
+                android:layout_marginRight="@dimen/fifteen"
+                android:gravity="left"
+                android:orientation="horizontal"
+                android:padding="@dimen/ten"
+                android:weightSum="1">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".55"
+                    android:gravity="left"
+                    android:text="Mobile"
+                    android:textSize="@dimen/fifteen_text" />
+
+                <EditText
+                    android:id="@+id/pre_customer_mobile"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".45"
+                    android:background="@drawable/preview_customer_details"
+                    android:hint="Mobile"
+                    android:paddingLeft="@dimen/ten"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/Sixteen_text" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="@dimen/fifteen"
+                android:layout_marginTop="@dimen/fifteen"
+                android:layout_marginRight="@dimen/fifteen"
+                android:background="#d6d4d4" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginLeft="@dimen/fifteen"
+                android:layout_marginTop="@dimen/fifteen"
+                android:layout_marginRight="@dimen/fifteen"
+                android:gravity="left"
+                android:orientation="horizontal"
+                android:padding="@dimen/ten"
+                android:weightSum="1">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".55"
+                    android:gravity="left"
+                    android:text="Email"
+                    android:textSize="@dimen/fifteen_text" />
+
+                <EditText
+                    android:id="@+id/pre_customer_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".45"
+                    android:background="@drawable/preview_customer_details"
+                    android:hint="Email"
+                    android:paddingLeft="@dimen/ten"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/Sixteen_text" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="@dimen/fifteen"
+                android:layout_marginTop="@dimen/fifteen"
+                android:layout_marginRight="@dimen/fifteen"
+                android:background="#d6d4d4" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginLeft="@dimen/fifteen"
+                android:layout_marginTop="@dimen/fifteen"
+                android:layout_marginRight="@dimen/fifteen"
+                android:gravity="left"
+                android:orientation="horizontal"
+                android:padding="@dimen/ten"
+                android:weightSum="1">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".55"
+                    android:gravity="left"
+                    android:text="Delivery Charges"
+                    android:textSize="@dimen/fifteen_text" />
+
+                <EditText
+                    android:id="@+id/pre_customer_delivery_charges"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".45"
+                    android:background="@drawable/preview_customer_details"
+                    android:hint="Delivery Charges"
+                    android:paddingLeft="@dimen/ten"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/Sixteen_text" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="@dimen/fifteen"
+                android:layout_marginTop="@dimen/fifteen"
+                android:layout_marginRight="@dimen/fifteen"
+                android:background="#d6d4d4" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginLeft="@dimen/fifteen"
+                android:layout_marginTop="@dimen/fifteen"
+                android:layout_marginRight="@dimen/fifteen"
+                android:gravity="left"
+                android:orientation="horizontal"
+                android:padding="@dimen/ten"
+                android:weightSum="1">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".55"
+                    android:gravity="left"
+                    android:text="Flat / Building No."
+                    android:textSize="@dimen/fifteen_text" />
+
+                <EditText
+                    android:id="@+id/pre_customer_flat"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".45"
+                    android:background="@drawable/preview_customer_details"
+                    android:hint="Flat/Building"
+                    android:paddingLeft="@dimen/ten"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/Sixteen_text" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="@dimen/fifteen"
+                android:layout_marginTop="@dimen/fifteen"
+                android:layout_marginRight="@dimen/fifteen"
+                android:background="#d6d4d4" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginLeft="@dimen/fifteen"
+                android:layout_marginTop="@dimen/fifteen"
+                android:layout_marginRight="@dimen/fifteen"
+                android:gravity="left"
+                android:orientation="horizontal"
+                android:padding="@dimen/ten"
+                android:weightSum="1">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".55"
+                    android:gravity="left"
+                    android:text="Address"
+                    android:textSize="@dimen/fifteen_text" />
+
+                <EditText
+                    android:id="@+id/pre_customer_address"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".45"
+                    android:background="@drawable/preview_customer_details"
+                    android:hint="Address"
+                    android:paddingLeft="@dimen/ten"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/Sixteen_text" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="@dimen/fifteen"
+                android:layout_marginTop="@dimen/fifteen"
+                android:layout_marginRight="@dimen/fifteen"
+                android:background="#d6d4d4" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginLeft="@dimen/fifteen"
+                android:layout_marginTop="@dimen/fifteen"
+                android:layout_marginRight="@dimen/fifteen"
+                android:gravity="left"
+                android:orientation="horizontal"
+                android:padding="@dimen/ten"
+                android:weightSum="1">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".55"
+                    android:gravity="left"
+                    android:text="Paper"
+                    android:textSize="@dimen/fifteen_text" />
+
+                <EditText
+                    android:id="@+id/pre_customer_paper"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".45"
+                    android:background="@drawable/preview_customer_details"
+                    android:hint="Paper"
+                    android:paddingLeft="@dimen/ten"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/Sixteen_text" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="@dimen/fifteen"
+                android:layout_marginTop="@dimen/fifteen"
+                android:layout_marginRight="@dimen/fifteen"
+                android:background="#d6d4d4" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginLeft="@dimen/fifteen"
+                android:layout_marginTop="@dimen/fifteen"
+                android:layout_marginRight="@dimen/fifteen"
+                android:gravity="left"
+                android:orientation="horizontal"
+                android:padding="@dimen/ten"
+                android:weightSum="1">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".55"
+                    android:gravity="left"
+                    android:text="Price"
+                    android:textSize="@dimen/fifteen_text" />
+
+                <EditText
+                    android:id="@+id/pre_customer_paper_price"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".45"
+                    android:background="@drawable/preview_customer_details"
+                    android:hint="Price"
+                    android:paddingLeft="@dimen/ten"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/Sixteen_text" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="@dimen/fifteen"
+                android:layout_marginTop="@dimen/fifteen"
+                android:layout_marginRight="@dimen/fifteen"
+                android:background="#d6d4d4" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginLeft="@dimen/fifteen"
+                android:layout_marginTop="@dimen/fifteen"
+                android:layout_marginRight="@dimen/fifteen"
+                android:gravity="left"
+                android:orientation="horizontal"
+                android:padding="@dimen/ten"
+                android:weightSum="1">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".55"
+                    android:gravity="left"
+                    android:text="Quantity"
+                    android:textSize="@dimen/fifteen_text" />
+
+                <EditText
+                    android:id="@+id/pre_customer_paper_qty"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".45"
+                    android:background="@drawable/preview_customer_details"
+                    android:hint="Quantity"
+                    android:paddingLeft="@dimen/ten"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/Sixteen_text" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="@dimen/fifteen"
+                android:layout_marginTop="@dimen/fifteen"
+                android:layout_marginRight="@dimen/fifteen"
+                android:background="#d6d4d4" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginLeft="@dimen/fifteen"
+                android:layout_marginTop="@dimen/fifteen"
+                android:layout_marginRight="@dimen/fifteen"
+                android:gravity="left"
+                android:orientation="horizontal"
+                android:padding="@dimen/ten"
+                android:weightSum="1">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".55"
+                    android:gravity="left"
+                    android:text="Start Date"
+                    android:textSize="@dimen/fifteen_text" />
+
+                <EditText
+                    android:id="@+id/pre_customer_start_date"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".45"
+                    android:background="@drawable/preview_customer_details"
+                    android:hint="Start date"
+                    android:paddingLeft="@dimen/ten"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/Sixteen_text" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="@dimen/fifteen"
+                android:layout_marginTop="@dimen/fifteen"
+                android:layout_marginRight="@dimen/fifteen"
+                android:background="#d6d4d4" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginLeft="@dimen/fifteen"
+                android:layout_marginTop="@dimen/fifteen"
+                android:layout_marginRight="@dimen/fifteen"
+                android:gravity="left"
+                android:orientation="horizontal"
+                android:padding="@dimen/ten"
+                android:weightSum="1">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".55"
+                    android:gravity="left"
+                    android:text="Send Bills Via"
+                    android:textSize="@dimen/fifteen_text" />
+
+                <EditText
+                    android:id="@+id/pre_customer_bills_via"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".45"
+                    android:background="@drawable/preview_customer_details"
+                    android:hint="Message / Mail"
+                    android:paddingLeft="@dimen/ten"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/Sixteen_text" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="@dimen/fifteen"
+                android:layout_marginTop="@dimen/fifteen"
+                android:layout_marginRight="@dimen/fifteen"
+                android:background="#d6d4d4" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginLeft="@dimen/fifteen"
+                android:layout_marginTop="@dimen/fifteen"
+                android:layout_marginRight="@dimen/fifteen"
+                android:gravity="left"
+                android:orientation="horizontal"
+                android:padding="@dimen/ten"
+                android:weightSum="1">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".55"
+                    android:gravity="left"
+                    android:text="Delivery Days"
+                    android:textSize="@dimen/fifteen_text" />
+
+                <EditText
+                    android:id="@+id/pre_customer_delivery_days"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".45"
+                    android:background="@drawable/preview_customer_details"
+                    android:hint="Delivery Days"
+                    android:paddingLeft="@dimen/ten"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/Sixteen_text" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginLeft="@dimen/fifteen"
+                android:layout_marginTop="@dimen/fifteen"
+                android:layout_marginRight="@dimen/fifteen"
+                android:gravity="left"
+                android:orientation="horizontal"
+                android:padding="@dimen/ten"
+                android:weightSum="1">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".55"
+                    android:gravity="left"
+                    android:text="No. of Delivery Days"
+                    android:textSize="@dimen/fifteen_text" />
+
+                <EditText
+                    android:id="@+id/pre_customer_days_num"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".45"
+                    android:background="@drawable/preview_customer_details"
+                    android:hint="Delivery Days"
+                    android:paddingLeft="@dimen/ten"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/Sixteen_text" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btn_update"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/fifteen"
+                android:layout_marginTop="@dimen/fifteen"
+                android:layout_marginRight="@dimen/fifteen"
+                android:layout_marginBottom="@dimen/hundred"
+                android:background="@color/blue"
+                android:text="Update"
+                android:textColor="@color/white" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <android.support.v7.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center"
+        android:layout_margin="@dimen/thirty"
+        android:layout_marginTop="10dp"
+        app:cardCornerRadius="@dimen/twenty"
+        app:cardElevation="@dimen/ten">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/ten"
+            android:paddingTop="@dimen/five"
+            android:paddingRight="@dimen/ten"
+            android:paddingBottom="@dimen/five">
+
+            <TextView
+                android:id="@+id/edit_detail"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/fifteen"
+                android:layout_marginRight="@dimen/fifteen"
+                android:drawableTop="@drawable/edit_blue"
+                android:gravity="center"
+                android:text="Edit" />
+
+            <TextView
+                android:id="@+id/delete_detail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/fifteen"
+                android:layout_marginRight="@dimen/fifteen"
+                android:drawableTop="@drawable/delete_blue"
+                android:text="Delete" />
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+</FrameLayout>

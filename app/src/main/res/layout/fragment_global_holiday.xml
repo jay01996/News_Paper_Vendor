@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context="com.example.user.newspapervendor.Fragments.GlobalHolidayFragment">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/ten"
+        android:text="2019"
+        android:textColor="@color/logo_color"
+        android:textSize="@dimen/twenty_five_text" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="@dimen/ten"
+        android:background="@color/logo_color" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:layout_marginLeft="@dimen/twenty"
+        android:layout_marginTop="@dimen/twenty"
+        android:text="Republic Day"
+        android:textColor="@color/black"
+        android:textSize="@dimen/eighteen_text" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:layout_marginLeft="@dimen/twenty"
+        android:layout_marginTop="@dimen/five"
+        android:text="26 JAN"
+        android:textColor="@color/midnight_black"
+        android:textSize="@dimen/Sixteen_text" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_margin="@dimen/twenty"
+        android:background="@color/midnight_black" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:layout_marginLeft="@dimen/twenty"
+        android:text="Independence  Day"
+        android:textColor="@color/black"
+        android:textSize="@dimen/eighteen_text" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:layout_marginLeft="@dimen/twenty"
+        android:layout_marginTop="@dimen/five"
+        android:text="15 AUG"
+        android:textColor="@color/midnight_black"
+        android:textSize="@dimen/Sixteen_text" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_margin="@dimen/twenty"
+        android:background="@color/midnight_black" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:layout_marginLeft="@dimen/twenty"
+        android:text="Gandhi Jayanti"
+        android:textColor="@color/black"
+        android:textSize="@dimen/eighteen_text" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:layout_marginLeft="@dimen/twenty"
+        android:layout_marginTop="@dimen/five"
+        android:text="2 OCT"
+        android:textColor="@color/midnight_black"
+        android:textSize="@dimen/Sixteen_text" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="@dimen/twenty"
+        android:background="@color/logo_color" />
+</LinearLayout>

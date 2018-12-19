@@ -3,24 +3,26 @@
 
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="fill_parent"
-    android:layout_height="fill_parent"
-    android:background="@color/btn_text_color_dark_blue"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/splash_background"
     android:fitsSystemWindows="true"
-    tools:context="com.example.user.newspapervendor.activities.LoginScreen">
+    tools:context=".LoginScreen">
+
 
     <LinearLayout
+        android:id="@+id/linear_layout_login"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
         android:paddingLeft="24dp"
-        android:paddingTop="56dp"
+        android:paddingTop="@dimen/fifteen"
         android:paddingRight="24dp">
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
+            android:layout_gravity="center"
             android:layout_marginBottom="24dp"
             android:fontFamily="cursive"
             android:text="Login"
@@ -31,25 +33,26 @@
         <android.support.design.widget.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            android:layout_marginBottom="8dp">
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="10dp">
 
             <android.support.design.widget.TextInputEditText
-                android:id="@+id/edt_mobile_number"
+                android:id="@+id/edt_login_email"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Mobile Number"
+                android:hint="Email"
+                android:inputType="textEmailAddress"
+                android:paddingLeft="10dp"
                 android:textColor="@color/white"
-                android:inputType="phone"
-                android:maxLength="10"/>
+                android:textStyle="bold" />
         </android.support.design.widget.TextInputLayout>
 
         <Switch
-            android:checked="false"
             android:id="@+id/switch_show_password"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            />
+            android:checked="false"
+            android:shadowColor="@color/blue" />
 
 
         <!-- Password Label -->
@@ -58,24 +61,25 @@
         <android.support.design.widget.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="8dp">
+            android:layout_marginBottom="10dp">
 
             <android.support.design.widget.TextInputEditText
-                android:id="@+id/edt_password"
+                android:id="@+id/edt_login_password"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="Password"
-                android:textColor="@color/white"
-                android:inputType="textPassword" />
+                android:inputType="textPassword"
+                android:paddingLeft="10dp"
+                android:textColor="@color/white" />
         </android.support.design.widget.TextInputLayout>
 
         <android.support.v7.widget.AppCompatButton
-            android:id="@+id/btn_login"
+            android:id="@+id/btn_signin"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="24dp"
-            android:background="#0d47a1"
             android:layout_marginBottom="24dp"
+            android:background="#0d47a1"
             android:padding="12dp"
             android:text="@string/login" />
 
@@ -83,10 +87,57 @@
             android:id="@+id/tv_forgot_password"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="24dp"
+            android:layout_marginBottom="@dimen/ten"
             android:gravity="center"
             android:text="@string/forgot_password"
             android:textSize="16dip" />
 
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/blue" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/ten"
+            android:layout_marginBottom="@dimen/ten"
+            android:gravity="center"
+            android:text="Or"
+            android:textColor="@color/black"
+            android:textSize="@dimen/eighteen_text" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/blue" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/fifteen"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_google_sign_in"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/ten"
+                android:layout_weight=".5"
+                android:background="@color/home_page_red"
+                android:text="Google" />
+
+            <Button
+                android:id="@+id/btn_fb_sign_in"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/ten"
+                android:layout_weight=".5"
+                android:background="@color/blue"
+                android:text="Facebook" />
+        </LinearLayout>
+
     </LinearLayout>
+
+
 </ScrollView>

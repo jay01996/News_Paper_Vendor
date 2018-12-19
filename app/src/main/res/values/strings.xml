@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">NewsPaperVendor</string>
+    <string name="app_name">PaperDele</string>
     <string name="login">Login Now</string>
     <string name="forgot_password">Forgot Password?</string>
     <string name="signup">Signup</string>
@@ -22,7 +22,6 @@
     <string name="online_collection_amount">₹ 0.0</string>
     <string name="customers">Customers</string>
     <string name="add_manage_customers">Add, Manage Customers</string>
-    <string name="bill_collection"><![CDATA[Bill & Collection]]></string>
     <string name="bank_transfer_name">Bank Transfer</string>
     <string name="online_transfer_states">Online Transfer States</string>
     <string name="stop_delivery">Stop Delivery</string>
@@ -32,10 +31,96 @@
     <string name="monthly_statement">Monthly Statement</string>
     <string name="view_print_monthly_statement"><![CDATA[View & Print Monthly Statement]]></string>
     <string name="settings">Settings</string>
-    <string name="training">Training</string>
-    <string name="learn_how_to_use_app">Learn How To Use App</string>
+    <string name="loan">Loan and insurance</string>
+    <string name="loan_information">Get ₹ 5000 To ₹ 1 lakh as Loan</string>
     <string name="testimonials">Testimonials</string>
     <string name="home_loan_insurance"><![CDATA[Home Loan & Insurance]]></string>
-    <string name="october_2018">October 2018</string>
+    <string name="october_2018">November\n2018</string>
     <string name="splash_msg">A Tool For Newspaper delivery and Auto-Generated Bill</string>
+    <string name="newspaper_magazine"><![CDATA[Newspaper & Magazine]]></string>
+    <string name="loan_insurance"><![CDATA[Loan & Insurance]]></string>
+    <string name="share_your_feedback_with_us">Share Your Feedback With Us...</string>
+    <string name="contact_info">You can call us anytime between 10 AM to 6 PM from monday to friday.</string>
+    <string name="contact_info2">For any support or business enquiry please fill this form. We reply within 1 hour during office timing. Post office hours, your queries will be replied next day. </string>
+    <string name="coupan_expiry"><![CDATA[Coupan & Expiry]]></string>
+
+    <string-array name="all_papers">
+        <item>The Hindu</item>
+        <item>Dainik Jagran</item>
+        <item>Hindustan Times</item>
+        <item>Amar Ujala</item>
+        <item>The Times of India</item>
+        <item>The Indian Express</item>
+        <item>The Economic Times</item>
+        <item>Dainik Bhaskar</item>
+        <item>Punjab Kesari</item>
+        <item>The Financial Express</item>
+        <item>The Independent</item>
+        <item>The New York Times</item>
+        <item>The Statesman</item>
+        <item>New York Daily News</item>
+        <item>The Observer</item>
+        <item>The Tribune</item>
+        <item>The Daily Telegraph</item>
+        <item>Alternative newspaper</item>
+        <item>The Pioneer</item>
+        <item>Rajasthan Patrika</item>
+        <item>Anandabazar Patrika</item>
+        <item>The Guardian</item>
+        <item>Business Standard</item>
+        <item>Navbharat Times</item>
+        <item>Daily Mirror</item>
+        <item>Mathrubhumi</item>
+        <item>The Washington Post</item>
+        <item>The Boston Globe</item>
+        <item>Deccan Herald</item>
+        <item>Deccan Chronicle</item>
+        <item>Mid Day</item>
+        <item>The Asian Age</item>
+        <item>The New Indian Express</item>
+        <item>The Times</item>
+        <item>The Telegraph</item>
+        <item>Lokmat</item>
+        <item>Mint</item>
+        <item>Divya Himachal</item>
+        <item>Business Line</item>
+        <item>The Sun</item>
+        <item>Dainik Navajyoti</item>
+        <item>Mumbai Mirror</item>
+        <item>Daily News and Analysis</item>
+        <item>Chandrika</item>
+        <item>Madhyamam Daily</item>
+        <item>Vijaya Karnataka</item>
+        <item>Eenadu</item>
+        <item>Divya Bhaskar</item>
+        <item>The Assam Tribune</item>
+        <item>Udayavani</item>
+        <item>Prajavani</item>
+    </string-array>
+
+
+    <string-array name="settings">
+        <item>Profile</item>
+        <item>Newspaper and Magazine</item>
+        <item>Bank Details</item>
+        <item>Area</item>
+        <item>Holidays</item>
+        <item>Logout</item>
+        <item>Delete My Account</item>
+    </string-array>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="bill_collection"><![CDATA[Bill & Collection]]></string>
+    <string name="registration_success">Account Created!</string>
+    <string name="reset_password_msg">We just need your registered Email Id to sent you password reset instructions.</string>
+    <string name="reset">Reset</string>
+    <string name="cash_collected_msg">Cash Amount Collected Rs. </string>
+    <string name="advanced_pay_msg">Advanced Payment Rs. </string>
+    <string name="history">History</string>
+    <string name="call">Call</string>
+    <string name="report_problem">Report problem</string>
+    <string name="delete_customer">Delete customer</string>
+    <string name="delete_customer_msg">This action will permanently delete this customer from database.</string>
+    <string name="manage_holidays">Manage Holidays</string>
 </resources>

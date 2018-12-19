@@ -3,12 +3,40 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:background="@color/white"
-    tools:context="com.example.user.newspapervendor.activities.Notification">
+    tools:context=".Notification">
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.CardView
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/forty"
+            app:cardBackgroundColor="@color/colorPrimaryDark"
+            app:cardElevation="@dimen/five">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Notifications"
+                android:textColor="@color/white"
+                android:textSize="@dimen/eighteen_text" />
+
+        </android.support.v7.widget.CardView>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/logo_color"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/ten"
+            android:textSize="@dimen/twenty_text"
+            android:text="Nothing to show"/>
 
     </LinearLayout>
 </ScrollView>
